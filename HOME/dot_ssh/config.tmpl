@@ -1,4 +1,5 @@
 Host *
+  SendEnv COLORTERM
   AddKeysToAgent yes
 {{- if eq .chezmoi.os "darwin" }}
   UseKeychain yes
