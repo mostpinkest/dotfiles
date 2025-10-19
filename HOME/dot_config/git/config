@@ -6,8 +6,8 @@
 	required = true
 	clean = git-lfs clean -- %f
 [user]
-	name = Logicer
-	email = logicer@logicer.cc
+	name = mostpinkest
+	email = mostpinkest@mostpinkest.cc
 [init]
 	defaultBranch = main
 [include]

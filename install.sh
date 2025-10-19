@@ -31,7 +31,7 @@ for i in $@; do
       ;;
 
    -h )
-      printf "POSIX install script for logicer's dotfiles.\nLearn more: https://github.com/Logicer16/dotfiles\n\n"
+      printf "POSIX install script for mostpinkest's dotfiles.\nLearn more: https://github.com/mostpinkest/dotfiles\n\n"
       printf "$usage"
       exit 0
       ;;
@@ -71,7 +71,7 @@ if [ "$arg_source" != "clone" ]; then
   if echo $git_url | grep -q "\.git"; then
     git_url=`echo $git_url | sed 's/\(.*\)\(\.git\)/\1/'`
   fi
-  if [ "${git_url%.git}" = "https://github.com/logicer16/dotfiles" ]; then
+  if [ "${git_url%.git}" = "https://github.com/mostpinkest/dotfiles" ]; then
     # update git repo
     $chezmoi git -S $script_dir -- pull
     source="--source=$script_dir"
@@ -89,4 +89,4 @@ if [ ! -t 0 ] || [ ! -t 1 ]; then
 fi
 
 # exec: replace current process with chezmoi init
-exec env UNATTENDED=$UNATTENDED "$chezmoi" init --apply ${source:-"logicer16"}
+exec env UNATTENDED=$UNATTENDED "$chezmoi" init --apply ${source:-"mostpinkest"}
