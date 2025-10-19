@@ -7,7 +7,7 @@
 	clean = git-lfs clean -- %f
 [user]
 	name = mostpinkest
-	email = mostpinkest@mostpinkest.cc
+	email = mostpinkest@mostpinkest.com
 [init]
 	defaultBranch = main
 [include]
