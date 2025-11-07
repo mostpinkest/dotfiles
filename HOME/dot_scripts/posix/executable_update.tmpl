@@ -60,7 +60,7 @@ usercmd="$rootcmd -u $(logname)"
   {{ if eq .chezmoi.os "darwin" }}
   # Mac App Store
   if type brew &>/dev/null; then
-    mas upgrade
+    #mas upgrade
   fi
 
   # Mac software update
