@@ -1,5 +1,6 @@
 [core]
 	excludesfile = ~/.config/git/ignore_global
+	autocrlf = input
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
@@ -13,3 +14,4 @@
 [include]
 	path = credential-config
 	path = signing-config
+	path = fileMode-config
