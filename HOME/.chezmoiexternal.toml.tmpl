@@ -41,10 +41,9 @@
   exact = true
   stripComponents = 1
   refreshPeriod = "24h"
-{{- if or (eq .chezmoi.os "darwin") (ne .chezmoi.os "windows") }}
 {{- if eq .chezmoi.os "darwin" }}
 ["Library/Fonts/Cascadia Code (chezmoi)"]
-{{- else if ne .chezmoi.os "windows" }}
+{{- else }}
 [".local/share/fonts/Cascadia Code (chezmoi)"]
 {{- end }}
   type = "archive"
@@ -52,4 +51,3 @@
   refreshPeriod = "24h"
   include = ["**/ttf/CascadiaCodeNF*.ttf"]
   stripComponents = 1
-{{- end }}
