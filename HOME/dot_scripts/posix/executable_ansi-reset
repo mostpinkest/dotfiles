@@ -29,3 +29,5 @@ printf '%b' "\033[0m"
 printf '%b' "\033]30;\a"
 printf '%b' "\033]0;\a"
 printf '%b' "\033]2;\a"
+
+detect-screen

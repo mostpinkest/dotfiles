@@ -1,0 +1,4 @@
+if [ -n "$STY" ] || [ "$TERM" = "screen" ] || [[ "$TERM" == screen-* ]]; then
+  echo "You are currently running inside screen"
+  exit 1
+fi
