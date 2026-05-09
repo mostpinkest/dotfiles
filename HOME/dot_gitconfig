@@ -1,2 +1,3 @@
-[include]
-	path = .config/git/config
+# Done by default
+# [include]
+#   path = .config/git/config
