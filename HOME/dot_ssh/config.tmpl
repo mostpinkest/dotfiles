@@ -3,6 +3,7 @@ Host *
   AddKeysToAgent yes
 {{- if eq .chezmoi.os "darwin" }}
   UseKeychain yes
+  SecurityKeyProvider /usr/lib/ssh-keychain.dylib
 {{ end }}
 
 Host ubuntuvm
